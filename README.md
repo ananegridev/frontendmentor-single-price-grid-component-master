@@ -1,6 +1,6 @@
 ## Overview 💡
 
-![img]()
+![img](https://github.com/ananegridev/frontendmentor-single-price-grid-component-master/blob/main/design/desktop-preview.jpg)
 
 ### The challenge 🏆
 
