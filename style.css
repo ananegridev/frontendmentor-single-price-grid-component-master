@@ -1,0 +1,197 @@
+/* COLOR */
+
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --CyanOpacity: hsla(179, 62%, 43%, 0.7);
+    --BrightYellow: hsl(71, 73%, 54%);
+    --LightGray: hsl(204, 43%, 93%);
+    --GrayishBlue: hsl(218, 22%, 67%);
+}
+
+/* CSS RESET */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* FONT */
+.font-400 {
+    font-weight: 300;
+}
+
+.font-700 {
+    font-weight: 700;
+}
+
+/* CSS */
+
+body {
+    overflow: hidden;
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+    background-color: var(--LightGray);
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.join,
+.sub,
+.whyus {
+    padding: 40px;
+
+}
+
+/* JOIN */
+
+.join {
+    background-color: white;
+    grid-column: 1 / -1;
+    display: grid;
+    border-radius: 8px 8px 0 0;
+}
+
+.join h1 {
+    color: var(--Cyan);
+}
+
+.join h2 {
+    font-size: 1.1rem;
+    color: var(--BrightYellow);
+    margin: 20px 0 10px 0;
+}
+
+.join p {
+    color: var(--GrayishBlue);
+    line-height: 1.5;
+}
+
+/* SUB */
+
+.sub {
+    color: white;
+    background-color: var(--Cyan);
+    grid-column: 1/1;
+    display: grid;
+    border-radius: 0px 0px 0px 8px;
+}
+
+.sub div {
+    display: flex;
+    align-items: center;
+    margin-top: -30px;
+}
+
+.sub div span {
+    font-size: 2.5rem;
+}
+
+.sub div h4 {
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 15px;
+}
+
+.sub button {
+    background-color: var(--BrightYellow);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.sub button:hover {
+    background-color: white;
+    color: var(--Cyan);
+    transition: all 0.5s ease-out;
+}
+
+/* WHY */
+
+.whyus {
+    color: white;
+    background-color: var(--CyanOpacity);
+    grid-column: 2/2;
+    border-radius: 0px 0px 8px 0px;
+
+}
+
+.whyus ul {
+    color: rgba(255, 255, 255, 0.7);
+    list-style: none;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+/* CSS CREDITS*/
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.attribution {
+    margin-bottom: 1%;
+    text-align: center;
+    font-size: 8px;
+    text-transform: uppercase;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--Cyan);
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 670px) {
+    body {
+        height: auto;
+        display: grid;
+    }
+
+    main {
+        margin: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .join,
+    .sub,
+    .whyus {
+        padding: 30px;
+        grid-column: 1;
+    }
+
+    .sub {
+        border-radius: 0;
+    }
+
+    .sub div {
+        flex-wrap: wrap;
+        margin-top: 0px;
+    }
+
+    .sub button {
+        padding: 15px 10px;
+        margin-top: 15px;
+    }
+
+    .whyus {
+        border-radius: 0px 0px 8px 8px;
+    }
+
+    footer {
+        position: initial;
+    }
+}
