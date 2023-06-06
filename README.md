@@ -17,8 +17,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Page Frontend Mentor](https://your-solution-url.com)
-- Live Site URL: [Page Public](https://your-live-site-url.com)
+- Solution URL: [Page Frontend Mentor](https://www.frontendmentor.io/solutions/solution-single-price-grid-component-HqRW5mT1UC)
+- Live Site URL: [Page Public](https://frontendmentor-single-price-grid-component-master-beta.vercel.app/)
 
 ### Built with
 
